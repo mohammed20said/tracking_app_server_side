@@ -20,4 +20,6 @@ public class Contact {
     private String udId1;
     private String udId2;
     private Date date;
+
+
 }

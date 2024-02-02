@@ -12,6 +12,8 @@ public class FirebaseMessagingService {
 
     private final FirebaseMessaging firebaseMessaging;
 
+    private static int count = 0;
+
     public FirebaseMessagingService(FirebaseMessaging firebaseMessaging) {
         this.firebaseMessaging = firebaseMessaging;
     }
@@ -34,7 +36,7 @@ public class FirebaseMessagingService {
 
         try {
             String response = firebaseMessaging.send(message);
-            System.out.println("Successfully sent message: " + response);
+            System.out.println("Successfully sent message: " + count++ + response);
             return response;
         } catch (FirebaseMessagingException e) {
             return e.getMessage();

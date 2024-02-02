@@ -9,5 +9,4 @@ public class Notif {
 
     private String subject;
     private String content;
-//    private Map<String, String> data;
 }
