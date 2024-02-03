@@ -22,13 +22,4 @@ public class NotificationController {
         return "Hello World";
     }
 
-
-//    @GetMapping
-//    public String sendNotification(@RequestParam String token) throws FirebaseMessagingException {
-//        Notif notif = new Notif();
-//        notif.setSubject("Hi");
-//        notif.setContent("انا لله وانا اليه راجعون");
-//
-//        return firebaseMessagingService.sendNotification(notif, token);
-//    }
 }
